@@ -1,0 +1,53 @@
+{
+  "name": "shared-rn",
+  "version": "0.1.0",
+  "description": "Shared UI components and theme used across microapps, microfronts and examples",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/src/index.d.ts",
+  "react-native": "src/index.tsx",
+  "source": "src/index.tsx",
+  "files": [
+    "src",
+    "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "scripts": {
+    "prepare": "bob build",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "react": "19.0.0",
+    "react-native": "0.78.0",
+    "react-native-builder-bob": "^0.40.13",
+    "typescript": "5.0.4"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
+    ]
+  },
+  "author": "Zupiti",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/zupiti/shared-rn#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zupiti/shared-rn.git"
+  }
+}
