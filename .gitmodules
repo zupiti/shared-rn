@@ -1,0 +1,24 @@
+[submodule "microapp-main-app-rn"]
+	path = microapp-main-app-rn
+	url = https://github.com/zupiti/microapp-main-app-rn.git
+[submodule "microapp1-rn"]
+	path = microapp1-rn
+	url = https://github.com/zupiti/microapp1-rn.git
+[submodule "microapp2-rn"]
+	path = microapp2-rn
+	url = https://github.com/zupiti/microapp2-rn.git
+[submodule "microapp3-rn"]
+	path = microapp3-rn
+	url = https://github.com/zupiti/microapp3-rn.git
+[submodule "microfront1-rn"]
+	path = microfront1-rn
+	url = https://github.com/zupiti/microfront1-rn.git
+[submodule "microfront2-rn"]
+	path = microfront2-rn
+	url = https://github.com/zupiti/microfront2-rn.git
+[submodule "shared-rn"]
+	path = shared-rn
+	url = https://github.com/zupiti/shared-rn.git
+[submodule "rules-project"]
+	path = rules-project
+	url = https://github.com/zupiti/rules-project.git
