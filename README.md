@@ -9,6 +9,24 @@ Biblioteca compartilhada de componentes e tema usada pelo main app, microapps e 
 - `Card`
 - `PrimaryButton`
 - `theme`, `colors`, `spacing`, `radius`
+- **Request core** (`src/core/http`): `httpClient`, `configureHttpClient`, interceptors, `HttpError`, `mockAdapter` / `fetchAdapter`
+
+### Request core
+
+Todos os `services/` dos microapps MUST usar `httpClient` do `shared-rn` (não `fetch`/`axios` direto).
+
+```ts
+import {configureHttpClient, httpClient, mockAdapter} from 'shared-rn';
+
+configureHttpClient({
+  adapter: mockAdapter, // POC — troque por fetchAdapter + baseURL em produção
+  getAuthToken: async () => token, // interceptor de Authorization
+});
+
+const response = await httpClient.get('/pedidos');
+```
+
+Interceptors padrão: header `X-Client`, auth Bearer via `getAuthToken`, cadeia de request/response/error.
 
 ## Consumidores
 

@@ -1,7 +1,7 @@
 {
   "name": "shared-rn",
   "version": "0.1.0",
-  "description": "Shared UI components and theme used across microapps, microfronts and examples",
+  "description": "Shared UI, theme and HTTP request core (interceptors) used across microapps",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
   "types": "lib/typescript/src/index.d.ts",
